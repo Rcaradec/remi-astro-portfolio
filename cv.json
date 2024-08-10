@@ -1,0 +1,129 @@
+{
+  "basics": {
+    "name": "Rémi Caradec",
+    "label": "Développeur Front End",
+    "image": "portait.jpeg",
+    "summary": "Je suis passionné par la création de sites web et d'applications web. J'aime travailler sur des projets innovants et collaborer avec des équipes talentueuses.",
+    "location": {
+      "city": "Paris",
+      "countryCode": "FR",
+      "country": "France"
+    }
+  },
+  "connect": {
+    "sectionLabel": "Experience",
+    "socials": [
+      {
+        "network": "GitHub",
+        "label": "GitHub",
+        "username": "rCaradec",
+        "url": "https://github.com/rcaradec"
+      },
+      {
+        "network": "LinkedIn",
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/rcaradec/"
+      }
+    ]
+  },
+  "experience": {
+    "sectionLabel": "Expériences professionnelles",
+    "jobs": [
+      {
+        "company": "Matou Technologies",
+        "position": "Développeur Front End",
+        "startDate": "01/05/2024",
+        "endDate": "aujourd'hui",
+        "summary": "Je travaille actuellement sur Purrfect-UI; L'objectif de ce projet open-source est de créer une base solide pour développer des applications React en utilisant les meilleurs outils et pratiques. Ce dernier s'appuie sur React Aria pour une accessibilité optimale, et avec Styled Components côté personnalisation. Storybook est utilisé pour la documentation et les tests visuels, et Vitest pour les tests unitaires.",
+        "highlights": [
+          "Développement de Purrfect UI",
+          "Création d'un ERP propriétaire"
+        ]
+      },
+      {
+        "company": "Alltricks",
+        "position": "Développeur Front End",
+        "startDate": "01/03/2022",
+        "endDate": "26/04/2024",
+        "summary": "J'ai travaillé en méthode Agile sur des demandes métiers, participé au Run et au développement du back office de l'entreprise. J'ai également travaillé sur l'optimisation de la performance du site et sur l'implémentation de nouvelles fonctionnalités.",
+        "highlights": [
+          "Mis en place la nouvelle identité visuelle du site à partir de maquettes Figma",
+          "Modernisé le code Javascript Legacy en React et Typescript",
+          "Créé de nouvelles fonctionnalités pour le back office"
+        ]
+      }
+    ]
+  },
+  "stack": {
+    "sectionLabel": "Mes compétences",
+    "logos": [
+      { "src": "/logos/astro.svg", "alt": "AstroJS Logo" },
+      { "src": "/logos/vercel.svg", "alt": "Vercel Logo" },
+      { "src": "/logos/tailwindcss.svg", "alt": "TailwindCSS Logo" },
+      { "src": "/logos/typescript.svg", "alt": "TypeScript Logo" },
+      { "src": "/logos/css.svg", "alt": "CSS Logo" },
+      { "src": "/logos/html5.svg", "alt": "HTML Logo" },
+      { "src": "/logos/vercel.svg", "alt": "Vercel Logo" },
+      { "src": "/logos/tailwindcss.svg", "alt": "TailwindCSS Logo" },
+      { "src": "/logos/typescript.svg", "alt": "TypeScript Logo" },
+      { "src": "/logos/css.svg", "alt": "CSS Logo" },
+      { "src": "/logos/html5.svg", "alt": "HTML Logo" }
+    ]
+  },
+  "personalProjects": {
+    "sectionLabel": "Projets personnels",
+    "projects": [
+      {
+        "name": "LiteFolio",
+        "description": "This is a starter template web portfolio. It is designed to be a starting point to showcase your work and help you stand out from the crowd. Perfect for developers, designers, and other professionals.",
+        "imageUrl": "/assets/project.png",
+        "projectSocials": [
+          {
+            "network": "GitHub",
+            "label": "GitHub",
+            "url": "https://github.com/gonzalochale/litefolio"
+          },
+          {
+            "network": "Demo",
+            "label": "Demo",
+            "url": "https://litefolio.vercel.app/"
+          }
+        ]
+      },
+      {
+        "name": "LiteFolio",
+        "description": "This is a starter template web portfolio. It is designed to be a starting point to showcase your work and help you stand out from the crowd. Perfect for developers, designers, and other professionals.",
+        "imageUrl": "/assets/project.png",
+        "projectSocials": [
+          {
+            "network": "GitHub",
+            "label": "GitHub",
+            "url": "https://github.com/gonzalochale/litefolio"
+          },
+          {
+            "network": "Demo",
+            "label": "Demo",
+            "url": "https://litefolio.vercel.app/"
+          }
+        ]
+      },
+      {
+        "name": "LiteFolio",
+        "description": "This is a starter template web portfolio. It is designed to be a starting point to showcase your work and help you stand out from the crowd. Perfect for developers, designers, and other professionals.",
+        "imageUrl": "/assets/project.png",
+        "projectSocials": [
+          {
+            "network": "GitHub",
+            "label": "GitHub",
+            "url": "https://github.com/gonzalochale/litefolio"
+          },
+          {
+            "network": "Demo",
+            "label": "Demo",
+            "url": "https://litefolio.vercel.app/"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,71 @@
+---
+import cv from "@cv";
+
+const {
+  basics: { name, summary },
+  connect: { socials },
+} = cv;
+---
+
+<section
+  class="w-full flex flex-col gap-5 justify-center items-center px-4 pb-24 sm:pb-36"
+>
+  <div class="flex flex-col gap-2">
+    <h1
+      class="w-full max-w-xl sm:text-center text-3xl sm:text-5xl md:text-7xl font-medium tracking-tighter"
+    >
+      I'm {name}
+    </h1>
+    <h2
+      class="w-full max-w-xl text-muted-foreground sm:text-center text-normal sm:text-lg md:text-xl font-light tracking-tighter"
+    >
+      {summary}
+    </h2>
+  </div>
+  <div
+    class="w-full flex flex-wrap gap-3 items-center justify-start sm:justify-center"
+  >
+    {
+      socials.map((social) => (
+        <a
+          href={social.url}
+          class="text-sm pointer-events-auto px-3 py-2 bg-foreground rounded-[1rem] hover:bg-card transition-all ease-in-out duration-300 text-card hover:text-foreground hover:border-transparent perfect-shadow"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {social.label}
+        </a>
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  @keyframes heroIn {
+    0% {
+      opacity: 0;
+      transform: translateY(0.5rem);
+    }
+    60% {
+      opacity: 1;
+      transform: translateY(-0.05rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  h1 {
+    opacity: 0;
+    animation: heroIn 0.7s cubic-bezier(0.5, 1.15, 0.2, 1.1) forwards;
+  }
+  h2 {
+    opacity: 0;
+    animation: heroIn 0.7s cubic-bezier(0.5, 1.15, 0.2, 1.1) 0.3s forwards;
+  }
+  a {
+    opacity: 0;
+    animation: heroIn 0.7s cubic-bezier(0.5, 1.15, 0.2, 1.1) 0.6s forwards;
+  }
+</style>
