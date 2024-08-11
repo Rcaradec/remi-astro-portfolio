@@ -57,17 +57,23 @@
   "stack": {
     "sectionLabel": "Mes compétences",
     "logos": [
+      { "src": "/logos/javascript.svg", "alt": "JavaScript Logo" },
+      { "src": "/logos/react.svg", "alt": "React Logo" },
+      { "src": "/logos/typescript.svg", "alt": "TypeScript Logo" },
+      { "src": "/logos/reactquery.svg", "alt": "React Query Logo" },
+      { "src": "/logos/storybook.svg", "alt": "Storybook Logo" },
+      { "src": "/logos/jquery_dark.svg", "alt": "jQuery Logo" },
       { "src": "/logos/astro.svg", "alt": "AstroJS Logo" },
-      { "src": "/logos/vercel.svg", "alt": "Vercel Logo" },
-      { "src": "/logos/tailwindcss.svg", "alt": "TailwindCSS Logo" },
-      { "src": "/logos/typescript.svg", "alt": "TypeScript Logo" },
-      { "src": "/logos/css.svg", "alt": "CSS Logo" },
+      { "src": "/logos/figma.svg", "alt": "Figma Logo" },
       { "src": "/logos/html5.svg", "alt": "HTML Logo" },
-      { "src": "/logos/vercel.svg", "alt": "Vercel Logo" },
-      { "src": "/logos/tailwindcss.svg", "alt": "TailwindCSS Logo" },
-      { "src": "/logos/typescript.svg", "alt": "TypeScript Logo" },
+      { "src": "/logos/jest.svg", "alt": "Jest Logo" },
+      { "src": "/logos/vitejs.svg", "alt": "Vite Logo" },
+      { "src": "/logos/vitest.svg", "alt": "Vitest Logo" },
       { "src": "/logos/css.svg", "alt": "CSS Logo" },
-      { "src": "/logos/html5.svg", "alt": "HTML Logo" }
+      { "src": "/logos/tailwindcss.svg", "alt": "TailwindCSS Logo" },
+      { "src": "/logos/docker.svg", "alt": "Docker Logo" },
+      { "src": "/logos/git.svg", "alt": "Git Logo" },
+      { "src": "/logos/github-dark.svg", "alt": "GitHub Logo" }
     ]
   },
   "personalProjects": {
