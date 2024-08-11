@@ -45,6 +45,16 @@ const { title } = Astro.props;
       --accent: 0, 0%, 92%;
       --border: 220 13% 91%;
     }
+
+    .dark {
+      --background: 0, 0%, 10%;
+      --foreground: 0, 0%, 90%;
+      --card: 0, 0%, 15%;
+      --muted: 0, 0%, 20%;
+      --muted-foreground: 0, 0%, 70%;
+      --accent: 0, 0%, 30%;
+      --border: 220 13% 30%;
+    }
   }
 
   @layer base {
@@ -69,3 +79,22 @@ const { title } = Astro.props;
       0 12px 12px -6px var(--base), 0 24px 24px -12px var(--base);
   }
 </style>
+
+<script is:inline>
+  const theme = (() => {
+    if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+      return localStorage.getItem('theme');
+    }
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      return 'dark';
+    }
+    return 'light';
+  })();
+
+  if (theme === 'light') {
+    document.documentElement.classList.remove('dark');
+  } else {
+    document.documentElement.classList.add('dark');
+  }
+  window.localStorage.setItem('theme', theme);
+</script>

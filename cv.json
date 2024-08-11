@@ -74,19 +74,14 @@
     "sectionLabel": "Projets personnels",
     "projects": [
       {
-        "name": "LiteFolio",
-        "description": "This is a starter template web portfolio. It is designed to be a starting point to showcase your work and help you stand out from the crowd. Perfect for developers, designers, and other professionals.",
-        "imageUrl": "/assets/project.png",
+        "name": "Purrfect-UI",
+        "description": "Projet open-source de librairie de composants React pour créer des applications web modernes. Il est conçu pour être facile à utiliser et à personnaliser. Il est basé sur les meilleures pratiques et les dernières technologies.",
+        "imageUrl": "/assets/Purrfect-UI.png",
         "projectSocials": [
           {
-            "network": "GitHub",
-            "label": "GitHub",
-            "url": "https://github.com/gonzalochale/litefolio"
-          },
-          {
-            "network": "Demo",
-            "label": "Demo",
-            "url": "https://litefolio.vercel.app/"
+            "network": "Purrfect-UI",
+            "label": "Purrfect-UI",
+            "url": "https://www.npmjs.com/package/purrfect-ui"
           }
         ]
       },
