@@ -33,11 +33,12 @@
         "company": "Matou Technologies",
         "position": "Développeur Front End",
         "startDate": "01/05/2024",
-        "endDate": "aujourd'hui",
-        "summary": "Je travaille actuellement sur Purrfect-UI; L'objectif de ce projet open-source est de créer une base solide pour développer des applications React en utilisant les meilleurs outils et pratiques. Ce dernier s'appuie sur React Aria pour une accessibilité optimale, et avec Styled Components côté personnalisation. Storybook est utilisé pour la documentation et les tests visuels, et Vitest pour les tests unitaires.",
+        "endDate": null,
+        "summary": "Je travaille actuellement sur Purrfect-UI. L'objectif de ce projet open-source est de créer une base solide pour développer des applications React en utilisant les meilleurs outils et pratiques. Ce dernier s'appuie sur React Aria pour une accessibilité optimale, et avec Styled Components côté personnalisation. Storybook est utilisé pour la documentation et les tests visuels, et Vitest pour les tests unitaires.",
         "highlights": [
           "Développement de Purrfect UI",
-          "Création d'un ERP propriétaire"
+          "Création d'un ERP propriétaire",
+          "Création du site vitrine Matou Technologies"
         ]
       },
       {
@@ -48,8 +49,8 @@
         "summary": "J'ai travaillé en méthode Agile sur des demandes métiers, participé au Run et au développement du back office de l'entreprise. J'ai également travaillé sur l'optimisation de la performance du site et sur l'implémentation de nouvelles fonctionnalités.",
         "highlights": [
           "Mis en place la nouvelle identité visuelle du site à partir de maquettes Figma",
-          "Modernisé le code Javascript Legacy en React et Typescript",
-          "Créé de nouvelles fonctionnalités pour le back office"
+          "Modernisation du code Javascript Legacy en React et Typescript",
+          "Création de nouvelles fonctionnalités pour le back office"
         ]
       }
     ]

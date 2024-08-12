@@ -12,19 +12,21 @@ const { company, position, summary, startDate, endDate, highlights } =
   Astro.props;
 
 const parseDate = (dateString: string) => {
-  const [day, month, year] = dateString.split('/').map(Number);
+  const [day, month, year] = dateString.split("/").map(Number);
   return new Date(year, month - 1, day);
 };
 
 const formatDate = (date: Date) => {
-  const day = String(date.getDate()).padStart(2, '0');
-  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, "0");
+  const month = String(date.getMonth() + 1).padStart(2, "0");
   const year = date.getFullYear();
   return `${day}/${month}/${year}`;
 };
 
 const formattedStartDate = formatDate(parseDate(startDate));
-const formattedEndDate = endDate ? formatDate(parseDate(endDate)) : 'Today';
+const formattedEndDate = endDate
+  ? formatDate(parseDate(endDate))
+  : "Aujourd'hui";
 ---
 
 <div class="max-w-xl p-10 flex flex-col gap-10 bg-background rounded-[1rem]">
