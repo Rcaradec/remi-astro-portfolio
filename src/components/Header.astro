@@ -1,10 +1,10 @@
 ---
-import cv from '@cv';
-import { Image } from 'astro:assets';
-import ThemeToggle from './ThemeToggle';
+import cv from "@cv";
+import { Image } from "astro:assets";
+import ThemeToggle from "./ThemeToggle";
 
 const {
-  basics: { location },
+  nav: { home, about },
 } = cv;
 ---
 
@@ -14,7 +14,8 @@ const {
   <span
     class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex items-center gap-2"
   >
-    <span>{location.city}</span>
+    <a href="/">{home}</a>
   </span>
+  <a href="/about">{about}</a>
   <ThemeToggle client:only="react" />
 </header>
