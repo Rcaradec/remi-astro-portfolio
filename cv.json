@@ -3,12 +3,11 @@
     "name": "Rémi Caradec",
     "label": "Développeur Front End",
     "image": "portait.jpeg",
-    "summary": "Je suis passionné par la création de sites web et d'applications web. J'aime travailler sur des projets innovants et collaborer avec des équipes talentueuses.",
-    "location": {
-      "city": "Paris",
-      "countryCode": "FR",
-      "country": "France"
-    }
+    "summary": "Je suis passionné par la création de sites web et d'applications web. J'aime travailler sur des projets innovants et collaborer avec des équipes talentueuses."
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos"
   },
   "connect": {
     "sectionLabel": "Experience",
@@ -54,6 +53,11 @@
         ]
       }
     ]
+  },
+  "about": {
+    "sectionLabel": "À propos de moi",
+    "description": "Je suis passionné par la création de sites web et d'applications web. J'aime travailler sur des projets innovants et collaborer avec des équipes talentueuses. J'ai une expérience significative en développement Front End, et je suis toujours à la recherche de nouveaux défis. Je suis également très impliqué dans la communauté open-source, et j'aime partager mes connaissances avec les autres développeurs.",
+    "motivation": "Mon objectif est de vous présenter mes compétences en développement web et de vous montrer mes projets récents. N'hésitez pas à me contacter pour toute question ou opportunité."
   },
   "stack": {
     "sectionLabel": "Mes compétences",
