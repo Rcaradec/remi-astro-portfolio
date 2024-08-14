@@ -1,0 +1,97 @@
+---
+import { Image } from "astro:assets";
+
+import guillaumePic from "../assets/avatar-guillaume-fernandes.svg";
+import thomasPic from "../assets/avatar-thomas-pointel.svg";
+import Section from "./Section.astro";
+
+const testimonials = [
+  {
+    imageUrl: guillaumePic,
+    name: "Guillaume Fernandes",
+    title: "CTO Alltricks",
+    content:
+      "Rémi est un développeur talentueux et passionné. Il a une excellente compréhension des technologies web modernes et est toujours prêt à relever de nouveaux défis. Il est un atout précieux pour notre équipe et contribu de manière significative à nos projets.",
+  },
+  {
+    imageUrl: thomasPic,
+    name: "Thomas Pointel",
+    title: "CTO Groupe Gaillard",
+    content:
+      "Rémi est un développeur de confiance. Il a une grande attention aux détails et une excellente compréhension des meilleures pratiques de développement web. Il aime travailler en équipe et participe activement à la bonne entente du groupe. Il a été un membre précieux de notre équipe et a apporté une contribution significative à nos projets.",
+  },
+];
+---
+
+<Section sectionLabel="Recommandations" class="mb-24">
+  <!-- Carrousel des témoignages -->
+  <div class="carousel">
+    {
+      testimonials.map((testimonial, index) => (
+        <div class={`carousel-item ${index === 0 ? "active" : ""}`}>
+          <div class="testimonial pb-6 text-gray-500 font-medium mx-auto max-w-2xl h-32 text-balance items-center text-center">
+            <p class="text-balance text-muted-foreground text-sm sm:text-lg font-light tracking-tighter">
+              {testimonial.content}
+            </p>
+            <div class="flex items-center justify-center mt-12">
+              <Image
+                src={testimonial.imageUrl}
+                alt={testimonial.name}
+                width="48"
+                height="48"
+                class="rounded-full"
+              />
+            </div>
+            <div class="testimonial-info text-center py-6">
+              <h2 class="dark:text-white text-black font-bold text-base">
+                {testimonial.name}
+              </h2>
+              <p class="text-sm">{testimonial.title}</p>
+            </div>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</Section>
+
+<style>
+  .mb-24 {
+    margin-bottom: 6rem;
+  }
+
+  .carousel {
+    min-height: 15.625rem;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel-item {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .carousel-item.active {
+    opacity: 1;
+    position: relative;
+  }
+</style>
+
+<script>
+  let currentIndex = 0;
+  const items = document.querySelectorAll(".carousel-item");
+  const totalItems = items.length;
+
+  function showNextItem() {
+    items[currentIndex].classList.remove("active");
+    currentIndex = (currentIndex + 1) % totalItems;
+    items[currentIndex].classList.add("active");
+  }
+
+  setInterval(showNextItem, 5000);
+</script>

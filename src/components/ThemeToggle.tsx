@@ -30,8 +30,12 @@ export default function ThemeToggle() {
   }
 
   return (
-    <button onClick={handleClick}>
-      <img src="/assets/switch.svg" alt="Theme Icon" width="24" height="24" />
+    <button onClick={handleClick} id="theme-toggle">
+      {theme === "dark" ? (
+        <img src="/assets/sun.svg" alt="Theme Icon" width="24" height="24" />
+      ) : (
+        <img src="/assets/moon.svg" alt="Theme Icon" width="24" height="24" />
+      )}
     </button>
   );
 }

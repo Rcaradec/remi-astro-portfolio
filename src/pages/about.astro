@@ -5,6 +5,8 @@ import Footer from "@/components/Footer.astro";
 import Section from "@/components/Section.astro";
 
 import cv from "@cv";
+import { Image } from "astro:assets";
+import portrait from "../assets/portrait.jpeg";
 
 const {
   about: { sectionLabel, description, motivation },
@@ -17,9 +19,11 @@ const {
   >
     <Header class="mb-5" />
     <Section sectionLabel={sectionLabel}>
-      <img
-        src="/assets/portrait.jpeg"
+      <Image
+        src={portrait}
         alt="Portrait Rémi Caradec"
+        width="300"
+        height="300"
         class="rounded-full w-36 h-36 object-cover shadow-lg"
       />
       {description}

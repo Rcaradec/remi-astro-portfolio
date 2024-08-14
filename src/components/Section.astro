@@ -1,13 +1,14 @@
 ---
 interface SectionProps {
   sectionLabel: string;
+  class?: string;
 }
 
-const { sectionLabel } = Astro.props;
+const { sectionLabel, class: additionalClass } = Astro.props;
 ---
 
 <section
-  class="relative w-full flex flex-col gap-10 items-center justify-center px-4 py-20 sm:py-24 bg-card perfect-shadow"
+  class={`relative w-full flex flex-col gap-10 items-center justify-center px-4 py-20 sm:py-24 bg-card custom-shadow ${additionalClass || ""}`}
 >
   <h2
     class="section-title absolute top-[-20px] h-10 flex items-center px-4 py-2 rounded-full text-foreground text-sm sm:text-normal md:text-lg tracking-tighter dark:bg-zinc-700 bg-gray-200 shadow-xg"
@@ -57,5 +58,9 @@ const { sectionLabel } = Astro.props;
       black 80%,
       black transparent
     );
+  }
+
+  .custom-shadow {
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
   }
 </style>
