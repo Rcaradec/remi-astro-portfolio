@@ -3,7 +3,7 @@
     "name": "Rémi Caradec",
     "label": "Développeur Front End",
     "image": "portait.jpeg",
-    "summary": "Je suis passionné par la création de sites web et d'applications web. J'aime travailler sur des projets innovants et collaborer avec des équipes talentueuses."
+    "summary": "Je propose mes services en Developpement Web au proﬁt de l'expérience utilisateur. Créatif et curieux, je m'épanouis dans des équipes bienveillantes, motivées et rigoureuses."
   },
   "nav": {
     "home": "Accueil",
@@ -50,6 +50,17 @@
           "Mis en place la nouvelle identité visuelle du site à partir de maquettes Figma",
           "Modernisation du code Javascript Legacy en React et Typescript",
           "Création de nouvelles fonctionnalités pour le back office"
+        ]
+      },
+      {
+        "company": "KeepKi",
+        "position": "Développeur Front End Stagiaire",
+        "startDate": "01/05/2021",
+        "endDate": "31//2024",
+        "summary": "Application mobile qui permet de faire une sauvegarde 100% numérique et sécurisée de clés de logements, via smartphone. Service de livraison de clés express en moins de 30 minutes.",
+        "highlights": [
+          "Participation à la création de l'application mobile via Expo/React Native",
+          "Implication sur les enjeux métiers et les features de l'application"
         ]
       }
     ]
