@@ -24,6 +24,12 @@ export default {
           },
         },
       },
+      textShadow: {
+        sm: "1px 1px 2px rgba(0, 0, 0, 0.5)",
+        md: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+        lg: "3px 3px 6px rgba(0, 0, 0, 0.5)",
+        xl: "4px 4px 8px rgba(0, 0, 0, 0.5)",
+      },
       colors: {
         background: "hsl(var(--background))",
         accent: "hsl(var(--accent))",
@@ -31,6 +37,7 @@ export default {
         "muted-foreground": "hsl(var(--muted-foreground))",
         border: "hsl(var(--border))",
         card: "hsl(var(--card))",
+        cyan: "#00ffff",
       },
     },
     dark: {
@@ -38,7 +45,27 @@ export default {
       color: "white",
     },
   },
-  plugins: [addVariablesForColors],
+  plugins: [
+    addVariablesForColors,
+    function ({ addUtilities }) {
+      const newUtilities = {
+        ".text-shadow-sm": {
+          textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)",
+        },
+        ".text-shadow-md": {
+          textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+        },
+        ".text-shadow-lg": {
+          textShadow: "3px 3px 6px rgba(0, 0, 0, 0.5)",
+        },
+        ".text-shadow-xl": {
+          textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)",
+        },
+      };
+
+      addUtilities(newUtilities, ["responsive", "hover"]);
+    },
+  ],
 };
 
 function addVariablesForColors({ addBase, theme }) {

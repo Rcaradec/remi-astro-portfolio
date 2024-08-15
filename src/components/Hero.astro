@@ -12,12 +12,12 @@ const {
 >
   <div class="flex flex-col gap-2">
     <h1
-      class="w-full max-w-xl sm:text-center text-3xl sm:text-5xl md:text-7xl font-medium tracking-tighter"
+      class="w-full max-w-xl sm:text-center text-3xl sm:text-5xl md:text-7xl font-medium tracking-tighter text-cyan dark:text-white"
     >
       {name}
     </h1>
     <p
-      class="w-full max-w-xl text-muted-foreground sm:text-center text-normal sm:text-lg md:text-xl font-light tracking-tighter"
+      class="w-full max-w-xl text-white sm:text-center text-normal sm:text-lg md:text-xl font-light tracking-tighter"
     >
       {summary}
     </p>
@@ -29,7 +29,7 @@ const {
       socials.map((social) => (
         <a
           href={social.url}
-          class="text-sm pointer-events-auto px-3 py-2 bg-foreground rounded-[1rem] hover:bg-card transition-all ease-in-out duration-300 text-card hover:text-foreground hover:border-transparent perfect-shadow"
+          class="text-sm pointer-events-auto px-3 py-2 bg-foreground rounded-[1rem] hover:bg-card transition-all ease-in-out duration-300 text-card hover:text-foreground hover:border-transparent"
           target="_blank"
           rel="noopener noreferrer"
         >

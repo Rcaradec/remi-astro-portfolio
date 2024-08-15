@@ -16,7 +16,7 @@ import { ViewTransitions } from "astro:transitions";
       content="Ce portfolio est l'occasion pour moi de vous présenter mes compétences en développement web. Je suis passionné par la création de sites web et d'applications web. J'aime travailler sur des projets innovants et collaborer avec des équipes talentueuses."
     />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/dev.svg" />
     <meta name="generator" content={Astro.generator} />
     <ViewTransitions />
     <title>{title}</title>
@@ -24,16 +24,16 @@ import { ViewTransitions } from "astro:transitions";
   <body
     class="relative flex flex-col w-full min-h-dvh justify-center items-center bg-background"
   >
-    <video
-      autoplay
-      muted
-      loop
-      id="background-video"
-      class="absolute top-0 left-0 w-full h-full object-cover z-0"
-    >
-      <source src="/assets/videos/video.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
+    <img
+      src="/assets/background.svg"
+      class="absolute
+      inset-0
+      w-full
+      h-full
+      object-cover
+      z-0"
+      alt="Animated background"
+    />
     <slot />
   </body>
 </html>
@@ -49,7 +49,7 @@ import { ViewTransitions } from "astro:transitions";
       --foreground: 0, 0%, 9%;
       --card: 0, 0%, 100%;
       --muted: 0, 0%, 92%;
-      --muted-foreground: 0, 0%, 40%;
+      --muted-foreground: #f2f2f2;
       --accent: 0, 0%, 92%;
       --border: 220 13% 91%;
     }
@@ -62,11 +62,6 @@ import { ViewTransitions } from "astro:transitions";
       --muted-foreground: 0, 0%, 70%;
       --accent: 0, 0%, 30%;
       --border: 220 13% 30%;
-    }
-
-    #background-video {
-      z-index: -1;
-      opacity: 0.8;
     }
   }
 
@@ -82,14 +77,6 @@ import { ViewTransitions } from "astro:transitions";
       font-family: "Geist", system-ui, sans-serif;
       @apply bg-background text-foreground;
     }
-  }
-  .perfect-shadow {
-    box-shadow: var(--perfect-shadow);
-    --base: hsl(214 80% 27% / 4%);
-    --shade: hsl(from var(--base) calc(h + 8) 25 calc(l - 5));
-    --perfect-shadow: 0 0 0 1px var(--base), 0 1px 1px -0.5px var(--shade),
-      0 3px 3px -1.5px var(--shade), 0 6px 6px -3px var(--shade),
-      0 12px 12px -6px var(--base), 0 24px 24px -12px var(--base);
   }
 </style>
 
