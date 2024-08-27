@@ -77,6 +77,10 @@ import { ViewTransitions } from "astro:transitions";
       @apply bg-background text-foreground;
     }
   }
+
+  body::-webkit-scrollbar {
+    display: none; /* Masque les barres de défilement pour les navigateurs basés sur WebKit */
+  }
 </style>
 
 <script is:inline>
