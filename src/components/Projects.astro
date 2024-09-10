@@ -10,17 +10,17 @@ const {
 
 <Section sectionLabel={sectionLabel}>
   <div
-    class="flex gap-5 sm:gap-8 snap-x snap-mandatory p-10 pointer-events-auto overflow-scroll"
+    class="flex gap-5 sm:gap-8 snap-x snap-mandatory p-10 pointer-events-auto overflow-scroll flex-col sm:flex-row"
   >
     {
       projects.map((project) => (
-        <article class="snap-always snap-center shrink-0 w-[90%] sm:w-[80% flex flex-col gap-10">
+        <article class="snap-always snap-center shrink-0 w-[90%] sm:w-[80% flex flex-col gap-10  mb-5 sm:mb-0">
           <div class="max-w-md flex flex-col gap-10">
             <div class="flex flex-col gap-3">
-              <h1 class="text-foreground text-sm sm:text-normal md:text-lg tracking-tighter">
+              <h1 class="text-foreground tracking-tighter text-[24px] sm:text-[34px]">
                 {project.name}
               </h1>
-              <p class="text-balance text-muted-foreground text-sm sm:text-lg font-light tracking-tighter">
+              <p class="text-balance text-muted-foreground text-sm sm:text-lg font-light tracking-tighter min-h-44">
                 {project.description}
               </p>
             </div>

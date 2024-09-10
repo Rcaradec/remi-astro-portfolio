@@ -39,6 +39,9 @@ export default {
         card: "hsl(var(--card))",
         cyan: "#00ffff",
       },
+      maxHeight: {
+        "741:": "741px",
+      },
     },
     dark: {
       background: "black",

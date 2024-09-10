@@ -98,12 +98,29 @@
       {
         "name": "Purrfect-UI",
         "description": "Projet open-source de librairie de composants React pour créer des applications web modernes. Il est conçu pour être facile à utiliser et à personnaliser. Il est basé sur les meilleures pratiques et les dernières technologies.",
-        "imageUrl": "/assets/Purrfect-UI.png",
+        "imageUrl": "/assets/purrfect-ui-cropped.png",
         "projectSocials": [
           {
             "network": "Purrfect-UI",
             "label": "Purrfect-UI",
             "url": "https://www.npmjs.com/package/purrfect-ui"
+          }
+        ]
+      },
+      {
+        "name": "Expense Tracker",
+        "description": "Projet fullstack de gestion de budget. Il permet d'agir sur ses dépenses en CRUD. Il est basé sur une architecture PERN (PostgreSQL, Express, React, Node.js).\n\nLes stacks backend sont Node.js, Express, Sequelize et PostgreSQL.\n\nLes stacks frontend sont React/Typescript, React-Hook-Form/Zod, Tanstack Query/Axios et Bootstrap.",
+        "imageUrl": "/assets/expense-tracker.png",
+        "projectSocials": [
+          {
+            "network": "Expense Tracker Back end",
+            "label": "Expense Tracker Backend",
+            "url": "https://github.com/Rcaradec/expense-tracker-backend"
+          },
+          {
+            "network": "Expense Tracker Front End",
+            "label": "Expense Tracker Frontend",
+            "url": "https://github.com/Rcaradec/expense-tracker"
           }
         ]
       }
