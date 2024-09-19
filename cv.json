@@ -123,6 +123,18 @@
             "url": "https://github.com/Rcaradec/expense-tracker"
           }
         ]
+      },
+      {
+        "name": "Tic Tac Toe",
+        "description": "Exercice basique à partir de la documentation officielle de React.\n\nGestion de States et d'Events handler, avec une fonctionnalité de retour dans le temps en enregistrant l'historique des mouvements de chaque joueur.",
+        "imageUrl": "/assets/tic-tac-toe.png",
+        "projectSocials": [
+          {
+            "network": "Tic Tac Toe",
+            "label": "Tic Tac Toe",
+            "url": "https://github.com/Rcaradec/TicTacToe"
+          }
+        ]
       }
     ]
   }
