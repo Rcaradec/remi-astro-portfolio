@@ -125,6 +125,18 @@
         ]
       },
       {
+        "name": "Basic Redux Toolkit Counter",
+        "description": "Projet de compteur basique utilisant Redux. Ce projet est construit avec Vite, React, TypeScript, React-Redux, Redux Toolkit et Material UI.",
+        "imageUrl": "/assets/basic-rtk.png",
+        "projectSocials": [
+          {
+            "network": "RTK-project",
+            "label": "RTK-project",
+            "url": "https://github.com/Rcaradec/RTK-project"
+          }
+        ]
+      },
+      {
         "name": "Tic Tac Toe",
         "description": "Exercice basique à partir de la documentation officielle de React.\n\nGestion de States et d'Events handler, avec une fonctionnalité de retour dans le temps en enregistrant l'historique des mouvements de chaque joueur.",
         "imageUrl": "/assets/tic-tac-toe.png",
