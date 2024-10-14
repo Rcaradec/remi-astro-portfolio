@@ -108,6 +108,23 @@
         ]
       },
       {
+        "name": "GameHub",
+        "description": "GameHub est une application web de découverte de jeux vidéo qui vous aide à trouver de nouveaux jeux intéressants à jouer. Avec GameHub, vous pouvez rechercher des jeux par plateforme, genre, et plus encore.\n\nElle est construite avec React/Typescript et Chakra UI, et branchée via Axios sur l'API Rawg (https://rawg.io/apidocs)",
+        "imageUrl": "/assets/gameHub.png",
+        "projectSocials": [
+          {
+            "network": "GameHub",
+            "label": "Live",
+            "url": "https://game-hub-project-lzt2jx89j-rcaradecs-projects.vercel.app/"
+          },
+          {
+            "network": "GameHub",
+            "label": "GitHub",
+            "url": "https://github.com/Rcaradec/game-hub-project"
+          }
+        ]
+      },
+      {
         "name": "Expense Tracker",
         "description": "Projet fullstack de gestion de budget. Il permet d'agir sur ses dépenses en CRUD. Il est basé sur une architecture PERN (PostgreSQL, Express, React, Node.js).\n\nLes stacks backend sont Node.js, Express, Sequelize et PostgreSQL.\n\nLes stacks frontend sont React/Typescript, React-Hook-Form/Zod, Tanstack Query/Axios et Bootstrap.",
         "imageUrl": "/assets/expense-tracker.png",
